@@ -20,7 +20,7 @@ var Input = React.createClass({
 			wrapperClass += " " + 'has-error';
 		}
 
-		return(
+		return (
 			<div className={wrapperClass}>
 				<label htmlFor={this.props.name}>{this.props.label}</label>
 				<div className="field">
@@ -35,7 +35,7 @@ var Input = React.createClass({
 					<div className="input">{this.props.error}</div>
 				</div>
 			</div>
-		)
+		);
 	}
 });
 
