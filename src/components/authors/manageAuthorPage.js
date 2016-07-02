@@ -28,7 +28,7 @@ var ManageAuthorPage = React.createClass({
 
 	authorFormIsValid: function() {
 		var formIsValid = true;
-		this.state.errors = {} // clear any previous errors.
+		this.state.errors = {}; // clear any previous errors.
 
 		if (this.state.author.firstName.length < 3) {
 			this.state.errors.firstName = 'First name must be atleast 3 characters';
