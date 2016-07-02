@@ -20,6 +20,8 @@ var Input = React.createClass({
 			wrapperClass += " " + 'has-error';
 		}
 
+		if (this.props.error) var errMsg = (<div className="input">{this.props.error}</div>);
+
 		return (
 			<div className={wrapperClass}>
 				<label htmlFor={this.props.name}>{this.props.label}</label>
@@ -32,7 +34,8 @@ var Input = React.createClass({
 						value={this.props.value}
 						onChange={this.props.onChange}
 					/>
-					<div className="input">{this.props.error}</div>
+					{/*<div className="input">{this.props.error}</div>*/}
+					{errMsg}
 				</div>
 			</div>
 		);
